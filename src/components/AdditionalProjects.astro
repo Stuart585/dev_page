@@ -1,0 +1,38 @@
+---
+const projects = [
+    {
+        title: "Mouse Tale",
+        body: "A 2D adventure video game written in LUA, using the Solar2D framework. Available for android devices.",
+    },
+    {
+        title: "The Bigger Fish",
+        body: "A web application for fishing enthusiasts. Create an account, upload details of your catch and see how you compare to other angulars on the leader boards.",
+    },
+    {
+        title: "Veggie Patch",
+        body: "An online community market place where hobby farmers can trade, sell or give away the excess produce from their gardens.",
+    },
+];
+---
+
+<div>
+    <div class="text-2xl font-semibold text-slate-500 mt-8 mb-5">
+        Additional Projects
+    </div>
+    <div class="">
+        {
+            projects.map((project) => (
+                <div class="py-2 text-slate-500 hover:text-slate-700 transform transition duration-300">
+                    <button>
+                        <div class="underline text-lg mb-3 font-semibold">
+                            {project.title}
+                        </div>
+                    </button>
+                    <div>{project.body}</div>
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+<style></style>

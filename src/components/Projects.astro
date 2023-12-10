@@ -1,0 +1,34 @@
+---
+import Card from "../components/Card.astro";
+
+const cards = [
+  {
+    title: "Bigger Fish",
+    body: "A web application for tracking and comparing catches in various lakes across the Madawaska region.",
+    listTitle: "Tech Stack:",
+    listItems: ["Vue 3", "TypeScript", "Pinia", "AWS Amplify"],
+    link: "testlink",
+  },
+  {
+    title: "Elton's Kitchen",
+    body: "A mock website for my cat's hypothetical restaurant.",
+    listTitle: "Tech Stack:",
+    listItems: ["Vue 3", "TypeScript", "Vuex"],
+    link: "testlink",
+  },
+  {
+    title: "Mouse Tale",
+    body: "A charming 2D adventure video game developed by a one man team (this guy). Available through the Android Play store. ",
+    listTitle: "Tech Stack:",
+    listItems: ["Solar2D", "Lua", "Android Play"],
+    link: "testlink",
+  },
+];
+---
+
+<div>
+  <div class="text-3xl font-semibold text-slate-600 my-5"></div>
+  <div class="grid grid-cols-3 gap-5">
+    {cards.map((card) => <Card content={card} />)}
+  </div>
+</div>

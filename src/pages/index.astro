@@ -3,16 +3,20 @@ import Layout from "../layouts/Layout.astro";
 import Profile from "../components/Profile.astro";
 import Projects from "../components/Projects.astro";
 import AdditionalProjects from "../components/AdditionalProjects.astro";
+import Resume from "../components/Resume.astro";
 ---
 
 <Layout>
-    <div class="pt-20 pb-32">
-        <Profile />
-    </div>
-    <div class="pb-10">
-        <Projects />
-    </div>
-    <div class="pb-20">
+  <div class="pt-20 pb-20">
+    <Profile />
+  </div>
+  <div class="pb-20">
+    <Projects />
+  </div>
+  <!-- <div class="pb-20">
         <AdditionalProjects />
-    </div>
+    </div> -->
+  <div class="pb-20">
+    <Resume />
+  </div>
 </Layout>

@@ -28,7 +28,7 @@ const cards = [
 
 <div>
   <div class="text-3xl font-semibold text-slate-600 my-5"></div>
-  <div class="grid grid-cols-3 gap-5">
+  <div class="grid grid-cols-1 md:grid-cols-3 print:grid-cols-1 gap-5">
     {cards.map((card) => <Card content={card} />)}
   </div>
 </div>

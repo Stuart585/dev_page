@@ -1,3 +1,9 @@
+# Personal Developer Page
+
+Visit my dev page for information on my work and education history, and an overview of some of my more recent projects. 
+
+Built using the light-weight front-end framework Astro. Styled with TailwindCss. 
+
 # Astro Starter Kit: Basics
 
 ```sh

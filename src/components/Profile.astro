@@ -1,25 +1,30 @@
 ---
-import profilePic from "../assests/images/profile_dev_pic_1.png?url";
+import profilePic from "../assests/images/profile_square.png?url";
 ---
 
-<div class="flex justify-center">
+<div class="flex flex-col justify-center">
+  <div class="lg:hidden flex justify-center">
+    <img class="rounded-full object-scale-down" src={profilePic} alt="" />
+  </div>
   <div class="flex w-full">
     <div
-      class="w-full md:w-2/3 print:w-full h-full flex flex-col justify-center"
+      class="w-full lg:w-2/3 print:w-full h-full flex flex-col justify-center"
     >
       <div class="h-max">
         <div class="text-7xl font-bold text-slate-800 py-8">Stuart Barker</div>
         <p class="text-slate-600 text-2xl">
           Frontend Software Developer with a tertiary education in both Business
-          Management and Software Develpment. Three years of expertise in
+          Management and Software Development. Three years of expertise in
           crafting dynamic web applications. Proficient in Angular, Vue,
           Tailwind, AWS, TypeScript, and JavaScript, I specialize in delivering
           seamless user experiences aligned with business goals.
         </p>
       </div>
     </div>
-    <div class="w-1/3 justify-center p-3 print:hidden hidden md:flex">
-      <img src={profilePic} alt="" />
+    <div class="w-1/3 justify-center items-center print:hidden hidden lg:flex">
+      <div>
+        <img class="rounded-full object-scale-down" src={profilePic} alt="" />
+      </div>
     </div>
   </div>
 </div>

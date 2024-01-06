@@ -5,7 +5,7 @@ Visit my dev page for information on my work and education history, and an overv
 Built using the light-weight front-end framework Astro. Styled with TailwindCss. 
 
 # Live site
-[https://stuartbarker.net](https://d1634cnucrbosm.cloudfront.net)
+https://stuartbarker.net/
 
 ## 🧞 Commands
 
